@@ -18,3 +18,7 @@ class CreateUser(BaseModel):
     username: str
     email: str
     password: str
+
+class CreateReview(BaseModel):
+    product_id: int
+    comment: str

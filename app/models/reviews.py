@@ -10,6 +10,6 @@ class Reviews(Base):
     product_id = Column(Integer, ForeignKey('products.id'))
     rating_id = Column(Integer, ForeignKey('rating.id'))
     comment = Column(String)
-    comment_date = Column(Date, default=datetime.utcnow)
+    comment_date = Column(Date, default=datetime.utcnow())
     is_active = Column(Boolean, default=True)
 
